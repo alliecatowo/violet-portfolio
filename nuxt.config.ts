@@ -18,12 +18,23 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  ssr: false,
+
   nitro: {
     prerender: {
       routes: [
         '/'
       ],
       crawlLinks: true
+    }
+  },
+
+  app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/violet-portfolio/' : '/',
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+      ]
     }
   },
 
@@ -40,14 +51,6 @@ export default defineNuxtConfig({
     clientBundle: {
       scan: true,
       sizeLimitKb: 512
-    }
-  },
-
-  app: {
-    head: {
-      link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
-      ]
     }
   }
 })
