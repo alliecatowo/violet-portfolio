@@ -185,6 +185,18 @@ export default defineContentConfig({
         image: z.string().editor({ input: 'media' })
       })
     }),
+    researchArticles: defineCollection({
+      type: 'data',
+      source: 'research/articles/*.yml',
+      schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        date: z.date(),
+        project: z.string().optional(),
+        url: z.string().optional(),
+        type: z.enum(['paper', 'article', 'presentation']).optional()
+      })
+    }),
     education: defineCollection({
       type: 'page',
       source: 'education.yml',

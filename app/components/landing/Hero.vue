@@ -59,7 +59,9 @@ defineProps<{
           delay: 0.1
         }"
       >
-        {{ page.title }}
+        <span class="bg-gradient-to-r from-violet-600 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%]">
+          {{ page.title }}
+        </span>
       </Motion>
     </template>
 
