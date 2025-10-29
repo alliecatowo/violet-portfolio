@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
-  ssr: false,
+  ssr: true,
 
   nitro: {
     prerender: {
@@ -30,7 +30,6 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/violet-portfolio/' : '/',
     head: {
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
