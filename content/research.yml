@@ -98,7 +98,9 @@ projects:
     description: Examining historical patterns and contemporary prevention strategies for mass atrocities, with focus on education and early warning systems.
     status: Ongoing
     role: Research Assistant
+    slug: genocide-prevention
   - title: Midwives & Doulas Mapping Project
     description: Mapping geographic distribution of maternal health support professionals and analyzing healthcare access patterns.
     status: In Progress
     role: Research Contributor
+    slug: midwives-doulas-mapping

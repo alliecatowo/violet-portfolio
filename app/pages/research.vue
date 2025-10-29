@@ -2,6 +2,7 @@
 const { data: page } = await useAsyncData('research', () => {
   return queryCollection('research').first()
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -30,30 +31,31 @@ useSeoMeta({
         container: 'pb-12'
       }"
     >
-      <h2 class="text-2xl font-bold mb-6">Active Research Projects</h2>
+      <h2 class="text-2xl font-bold mb-6 text-primary">Active Research Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <UCard
+        <UPageCard
           v-for="(project, index) in page.projects"
           :key="index"
-          :ui="{
-            body: 'space-y-3'
-          }"
+          :title="project.title"
+          :description="project.description"
+          :to="project.slug ? `/research/${project.slug}` : undefined"
+          :spotlight="true"
         >
-          <div class="flex items-start justify-between">
-            <h3 class="text-lg font-semibold">{{ project.title }}</h3>
-            <UBadge
-              v-if="project.status"
-              :label="project.status"
-              color="primary"
-              variant="soft"
-              size="xs"
-            />
-          </div>
-          <p class="text-muted text-sm">{{ project.description }}</p>
-          <p v-if="project.role" class="text-xs text-muted">
-            <span class="font-semibold">Role:</span> {{ project.role }}
-          </p>
-        </UCard>
+          <template #header>
+            <div class="flex items-center justify-between">
+              <UBadge
+                v-if="project.status"
+                :label="project.status"
+                :color="project.status === 'Completed' ? 'success' : 'primary'"
+                variant="soft"
+                size="xs"
+              />
+              <span v-if="project.role" class="text-xs text-muted">
+                {{ project.role }}
+              </span>
+            </div>
+          </template>
+        </UPageCard>
       </div>
     </UPageSection>
     <UPageSection

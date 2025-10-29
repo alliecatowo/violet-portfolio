@@ -166,8 +166,20 @@ export default defineContentConfig({
           title: z.string(),
           description: z.string(),
           status: z.string().optional(),
-          role: z.string().optional()
+          role: z.string().optional(),
+          slug: z.string().optional()
         })).optional()
+      })
+    }),
+    'research-projects': defineCollection({
+      type: 'page',
+      source: 'research/*.md',
+      schema: z.object({
+        date: z.date(),
+        status: z.string(),
+        role: z.string(),
+        institution: z.string(),
+        image: z.string().editor({ input: 'media' })
       })
     }),
     education: defineCollection({
@@ -181,6 +193,13 @@ export default defineContentConfig({
           status: z.string(),
           year: z.string()
         })).optional()
+      })
+    }),
+    contact: defineCollection({
+      type: 'page',
+      source: 'contact.yml',
+      schema: z.object({
+        content: z.object({})
       })
     })
   }
