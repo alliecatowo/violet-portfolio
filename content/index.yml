@@ -24,21 +24,24 @@ experience:
     - position: Bachelor of Arts in Sociology
       date: In Progress
       company:
-        name: California State University, Fresno
+        name: CSUF
+        fullName: California State University, Fresno
         logo: i-heroicons-academic-cap
         url: https://www.fresnostate.edu
         color: '#C41230'
     - position: Multiple Subject Teaching Credential
       date: In Progress
       company:
-        name: California State University, Fresno
+        name: CSUF
+        fullName: California State University, Fresno
         logo: i-heroicons-document-check
         url: https://www.fresnostate.edu
         color: '#C41230'
     - position: Dual Associate in Political Science & Sociology
       date: Completed
       company:
-        name: Clovis Community College
+        name: CCC
+        fullName: Clovis Community College
         logo: i-heroicons-building-library
         url: https://www.cloviscollege.edu
         color: '#003DA5'

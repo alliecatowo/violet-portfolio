@@ -23,6 +23,11 @@ useSeoMeta({
     <UPageHero
       :title="page.title"
       :description="page.description"
+      class="bg-gradient-to-b from-primary/5 to-transparent border-b border-primary/10"
+      :ui="{
+        title: 'text-primary',
+        container: 'py-16'
+      }"
     />
     <UPageSection
       v-if="page.specialties"
@@ -31,19 +36,15 @@ useSeoMeta({
       }"
     >
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <UCard
+        <UPageCard
           v-for="(specialty, index) in page.specialties"
           :key="index"
-          :ui="{
-            body: 'space-y-3'
-          }"
-        >
-          <div class="flex items-center space-x-3">
-            <UIcon :name="specialty.icon" class="size-6 text-primary" />
-            <h3 class="text-lg font-semibold">{{ specialty.title }}</h3>
-          </div>
-          <p class="text-muted text-sm">{{ specialty.description }}</p>
-        </UCard>
+          :icon="specialty.icon"
+          :title="specialty.title"
+          :description="specialty.description"
+          :spotlight="true"
+          spotlight-color="primary"
+        />
       </div>
     </UPageSection>
     <UPageSection
@@ -64,16 +65,17 @@ useSeoMeta({
       }"
     >
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <UCard
+        <UPageCard
           v-for="(testimonial, index) in page.testimonials"
           :key="index"
-          :ui="{
-            body: 'space-y-4'
-          }"
+          :description="testimonial.quote"
+          variant="subtle"
+          :spotlight="true"
         >
-          <p class="italic text-muted">"{{ testimonial.quote }}"</p>
-          <p class="text-sm font-semibold">— {{ testimonial.author }}</p>
-        </UCard>
+          <template #footer>
+            <p class="text-sm font-semibold text-muted">— {{ testimonial.author }}</p>
+          </template>
+        </UPageCard>
       </div>
     </UPageSection>
   </UPage>

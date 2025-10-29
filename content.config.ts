@@ -51,6 +51,7 @@ export default defineContentConfig({
             position: z.string(),
             company: z.object({
               name: z.string(),
+              fullName: z.string().optional(),
               url: z.string(),
               logo: z.string().editor({ input: 'icon' }),
               color: z.string()
@@ -166,6 +167,19 @@ export default defineContentConfig({
           description: z.string(),
           status: z.string().optional(),
           role: z.string().optional()
+        })).optional()
+      })
+    }),
+    education: defineCollection({
+      type: 'page',
+      source: 'education.yml',
+      schema: z.object({
+        content: z.object({}),
+        education: z.array(z.object({
+          degree: z.string(),
+          institution: z.string(),
+          status: z.string(),
+          year: z.string()
         })).optional()
       })
     })
