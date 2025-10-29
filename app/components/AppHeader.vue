@@ -19,7 +19,7 @@ defineProps<{
       }"
     >
       <template #list-trailing>
-        <ColorModeButton />
+        <UColorModeButton size="sm" class="rounded-full" />
       </template>
     </UNavigationMenu>
   </div>
