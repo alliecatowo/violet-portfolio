@@ -1,7 +1,6 @@
 <script setup lang="ts">
-const { data: navLinks } = await useAsyncData('navLinks', () =>
-  queryCollection('navigation').first().then(nav => nav?.links || [])
-)
+// Access the already-fetched data from app.vue
+const { data: navLinks } = useNuxtData('navLinks')
 
 const links = computed(() => navLinks.value || [])
 </script>

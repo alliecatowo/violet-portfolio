@@ -19,7 +19,8 @@ useSeoMeta({
   description: 'We are sorry but this page could not be found.'
 })
 
-const [{ data: navigation }, { data: files }] = await Promise.all([
+const [{ data: navLinks }, { data: navigation }, { data: files }] = await Promise.all([
+  useAsyncData('navLinks', () => queryCollection('navigation').first().then(nav => nav?.links || [])),
   useAsyncData('navigation', () => {
     return Promise.all([
       queryCollectionNavigation('blog')
@@ -40,7 +41,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 
 <template>
   <div>
-    <AppHeader :links="navLinks" />
+    <AppHeader />
 
     <UMain>
       <UContainer>
