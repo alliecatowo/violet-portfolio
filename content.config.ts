@@ -216,6 +216,23 @@ export default defineContentConfig({
       schema: z.object({
         content: z.object({})
       })
+    }),
+    navigation: defineCollection({
+      type: 'data',
+      source: 'navigation.yml',
+      schema: z.object({
+        links: z.array(z.object({
+          label: z.string(),
+          icon: z.string(),
+          to: z.string().optional(),
+          children: z.array(z.object({
+            label: z.string(),
+            description: z.string().optional(),
+            icon: z.string(),
+            to: z.string()
+          })).optional()
+        }))
+      })
     })
   }
 })

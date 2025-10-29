@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+const { data: navigation } = await useAsyncData('navigation', () =>
+  queryCollection('navigation').first()
+)
 
-defineProps<{
-  links: NavigationMenuItem[]
-}>()
+const links = navigation.value?.links || []
 </script>
 
 <template>

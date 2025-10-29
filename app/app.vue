@@ -24,7 +24,8 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
-const [{ data: navigation }, { data: files }] = await Promise.all([
+const [{ data: navLinks }, { data: navigation }, { data: files }] = await Promise.all([
+  useAsyncData('navLinks', () => queryCollection('navigation').first().then(nav => nav?.links || [])),
   useAsyncData('navigation', () => {
     return Promise.all([
       queryCollectionNavigation('blog')
