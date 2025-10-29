@@ -1,0 +1,28 @@
+title: Research & Academic Work
+description: Exploring critical social issues through academic research in genocide prevention, healthcare access, and social justice.
+seo:
+  title: Research & Academic Work - Violet Gash
+  description: Academic research in genocide prevention, maternal healthcare access, and social justice. Committed to understanding and addressing critical societal challenges.
+content: |
+  My academic journey extends beyond the classroom into meaningful research that addresses critical social issues. Through my work in sociology and political science, I'm committed to understanding complex societal challenges and contributing to solutions that promote justice, equity, and human dignity.
+
+  ## Why Research Matters
+
+  Research enhances my effectiveness as an educator by allowing me to:
+  - Bring current, real-world examples into tutoring sessions
+  - Teach students how to think critically and ask important questions
+  - Model intellectual curiosity and rigorous thinking
+  - Connect classroom learning to meaningful social issues
+
+  Click on any project below to learn more about the research, methodology, and findings.
+projects:
+  - title: Genocide Prevention Research
+    description: Examining historical patterns and contemporary prevention strategies for mass atrocities, with focus on education and early warning systems.
+    status: Ongoing
+    role: Research Assistant
+    slug: genocide-prevention
+  - title: Midwives & Doulas Mapping Project
+    description: Mapping geographic distribution of maternal health support professionals and analyzing healthcare access patterns.
+    status: In Progress
+    role: Research Contributor
+    slug: midwives-doulas-mapping

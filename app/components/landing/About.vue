@@ -8,14 +8,22 @@ defineProps<{
 
 <template>
   <UPageSection
-    :title="page.about.title"
-    :description="page.about.description"
+    class="bg-gradient-to-br from-primary/5 via-transparent to-primary/5 rounded-lg border border-primary/10 p-8"
     :ui="{
       container: '!p-0',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'text-left mt-3 text-sm sm:text-md lg:text-sm text-muted'
+      title: 'text-left text-2xl sm:text-3xl font-semibold mb-4',
+      description: 'text-left text-base sm:text-lg leading-relaxed text-foreground/80'
     }"
-  />
+  >
+    <template #title>
+      <span class="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+        {{ page.about.title }}
+      </span>
+    </template>
+    <template #description>
+      {{ page.about.description }}
+    </template>
+  </UPageSection>
 </template>
 
 <style scoped>

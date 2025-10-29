@@ -1,102 +1,115 @@
 seo:
-  title: Emma Thompson - UX/UI Designer
-  description: Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional.
-title: Hey, I'm Emma Thompson UX/UI Designer
-description: I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity.
+  title: Violet Gash - Educator, Researcher & Private Tutor
+  description: Welcome! I'm Violet Gash, an educator and researcher passionate about civic education, history, and inclusive learning. I provide K-12 tutoring with specialized experience in supporting students with developmental disabilities.
+title: Hey, I'm Violet Gash Educator & Researcher
+description: Passionate about civic education, history, and creating inclusive learning environments. Currently pursuing my teaching certification while providing private tutoring services for K-12 students.
 hero:
   links:
-    - label: Use this template
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: Tutoring Services
+      to: /tutoring
+      color: primary
+    - label: View Portfolio
+      to: /portfolio
       color: neutral
   images: []
 about:
   title: About Me
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    As an educator pursuing my Multiple Subject Teaching Credential, I bring a deep passion for history, civic education, and inclusive teaching practices.
+    My background in sociology and political science, combined with hands-on research experience, informs my approach to creating engaging, meaningful learning experiences for all students.
+    I specialize in working with K-12 learners, including students with developmental disabilities, and believe that every student deserves access to quality education that inspires curiosity and critical thinking.
 experience:
-  title: Work Experience
+  title: Education & Experience
   items:
-    - position: Brand Designer at
-      date: 2023 - Present
+    - position: Bachelor of Arts in Sociology
+      date: In Progress
       company:
-        name: Nuxt
-        logo: i-simple-icons-nuxtdotjs
-        url: https://nuxt.com
-        color: '#00DC82'
-    - position: Assets Designer at
-      date: 2022 - 2023
+        name: CSUF
+        fullName: California State University, Fresno
+        logo: i-heroicons-academic-cap
+        url: https://www.fresnostate.edu
+        color: '#C41230'
+    - position: Multiple Subject Teaching Credential
+      date: In Progress
       company:
-        name: Raycast
-        logo: i-simple-icons-raycast
-        url: https://raycast.com
-        color: '#FF6363'
-    - position: Senior UX/UI Designer at
-      date: 2020 - 2021
+        name: CSUF
+        fullName: California State University, Fresno
+        logo: i-heroicons-document-check
+        url: https://www.fresnostate.edu
+        color: '#C41230'
+    - position: Dual Associate in Political Science & Sociology
+      date: Completed
       company:
-        name: Linear
-        logo: i-simple-icons-linear
-        url: https://linear.app
-        color: '#5E6AD2'
+        name: CCC
+        fullName: Clovis Community College
+        logo: i-heroicons-building-library
+        url: https://www.cloviscollege.edu
+        color: '#003DA5'
 testimonials:
-  - quote: Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics.
+  - quote: Violet's patience and teaching style made all the difference for my daughter. She went from struggling with history to actually enjoying it! Violet has a gift for making complex topics accessible and engaging. We saw significant improvement in both grades and confidence.
     author:
-      name: Sarah Chen
-      description: Product Director at Bloom Finance
+      name: Jennifer Martinez
+      description: Parent of High School Student
       avatar:
-        src: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
-        srcset: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
-  - quote: Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless.
+        src: https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
+        srcset: https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+  - quote: As a parent of a child with autism, finding the right tutor was crucial. Violet's understanding of different learning needs and her adaptive teaching methods have been incredible. She creates a safe, supportive environment where my son can thrive. Highly recommend!
     author:
-      name: Michael Rodriguez
-      description: Co-founder of Wavelength Music
+      name: David Chen
+      description: Parent of Middle School Student
       avatar:
-        src: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
-        srcset: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
-  - quote: Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed.
+        src: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
+        srcset: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+  - quote: Violet helped me understand civics and government in a way that actually makes sense. She doesn't just teach you what to memorize - she helps you understand why it matters. My grades improved from a C to an A-, and I actually care about current events now!
     author:
-      name: Dr. Aisha Johnson
-      description: Chief Innovation Officer at GreenTech Solutions
+      name: Sarah Thompson
+      description: High School Junior
       avatar:
-        src: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
-        srcset: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
+        src: https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80
+        srcset: https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x
 blog:
   title: Latest Articles
-  description: Some of my recent thoughts
+  description: Insights on education, teaching strategies, and civic engagement
 faq:
   title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  description: Answers to common questions about tutoring services and approach.
   categories:
-    - title: Services & Process
+    - title: Tutoring Services
       questions:
-        - label: What services do you offer?
+        - label: What subjects do you tutor?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            I tutor all K-12 subjects, with particular expertise in history, social studies, civics, government, and social sciences. I also provide support in English/Language Arts, reading comprehension, and general homework help across all subject areas.
+        - label: What age groups and grade levels do you work with?
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            I work with students from kindergarten through 12th grade (K-12). My teaching approach is tailored to each student's developmental stage, learning style, and individual needs.
+        - label: Do you have experience with special needs students?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            Yes! I have specialized experience working with students with developmental disabilities, including autism spectrum disorder, ADHD, and other learning differences. I use adaptive teaching methods and create individualized learning plans that accommodate each student's unique needs and strengths.
+        - label: What is your teaching philosophy?
+          content: |
+            I believe education should be engaging, inclusive, and relevant. I focus on helping students develop critical thinking skills, connecting learning to real-world contexts, and building confidence. My goal is not just to help students succeed academically, but to foster a genuine love of learning and curiosity about the world.
+    - title: Logistics & Booking
       questions:
-        - label: How much does a project typically cost?
+        - label: How are sessions conducted?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            I offer both in-person and virtual tutoring sessions, depending on your location and preference. Virtual sessions are conducted via Zoom or Google Meet, and I use interactive tools to keep students engaged. Session length is typically 60 minutes, though we can adjust based on the student's age and attention span.
+        - label: What are your rates?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
+            My tutoring rates vary based on session frequency, subject complexity, and specific learning needs. Please contact me directly to discuss your situation and receive a customized quote. I strive to keep my services accessible and offer flexible payment options.
+        - label: How do I schedule a session?
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
+            You can reach out via email, phone, or the contact form on my website. We'll start with a brief consultation to discuss your student's needs, goals, and schedule. From there, we can arrange a regular tutoring schedule that works for your family.
+        - label: Do you offer group tutoring or workshops?
           content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            Yes! In addition to one-on-one tutoring, I offer small group sessions (2-4 students) and can design custom workshops on topics like study skills, test preparation, or specific subject areas. Group rates are available - please inquire for details.
+    - title: Background & Approach
       questions:
-        - label: What do you enjoy most about your work?
+        - label: What is your educational background?
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            I hold a Dual Associate degree in Political Science and Sociology from Clovis Community College, and I'm currently completing my Bachelor's degree in Sociology and Multiple Subject Teaching Credential at California State University, Fresno. I'm also involved in academic research on genocide prevention and healthcare access.
+        - label: What makes your approach different?
           content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            My teaching combines academic rigor with real-world relevance. Drawing on my background in sociology and political science, I help students understand not just the "what" but the "why" behind what they're learning. I'm particularly passionate about instilling civic values and helping students become informed, engaged citizens.
+        - label: Do you assign homework between sessions?
+          content: |
+            This depends on the student's needs and goals. I can provide supplementary practice materials and activities to reinforce learning between sessions, but I always coordinate with parents to ensure the workload is appropriate and manageable alongside school assignments.

@@ -1,48 +1,48 @@
-title: Talks & Workshops
-description: Explore talks and workshops I've given on UX design, front-end development, and building better digital products.
+title: Workshops & Presentations
+description: Educational workshops, research presentations, and guest lectures on civic education, inclusive teaching practices, and social justice in education.
+seo:
+  title: Workshops & Presentations - Violet Gash
+  description: Professional development workshops, research presentations, and educational talks by Violet Gash on civic education, inclusive teaching, and social justice.
 links:
-  - label: Invite me to speak
+  - label: Invite me to present
     size: md
 events:
   - category: Conference
-    title: "Bridging the Gap: Design Systems for Designer-Developer Collaboration"
-    date: "2024-10-26"
-    location: "VueConf US, Miami, FL"
+    title: "Genocide Prevention Through Education: Teaching Difficult History"
+    date: "2024-10-15"
+    location: "California Sociology Conference, Sacramento, CA"
     url: "#"
   - category: Conference
-    title: "Intuitive Interfaces: Applying UX Principles in Nuxt.js Applications"
-    date: "2024-06-15"
-    location: "Nuxt Nation, Online"
-    url: "#"
-  - category: Conference
-    title: "Accessibility First: Building Inclusive Web Apps"
-    date: "2023-11-08"
-    location: "Boston Web Performance Meetup, Boston, MA"
-  - category: Live talk
-    title: "Mastering Component Design in Figma & Vue"
-    date: "2024-08-20"
-    location: "Design & Dev Boston Meetup, Boston, MA"
+    title: "Mapping Healthcare Access: A Research Project Overview"
+    date: "2024-08-22"
+    location: "Student Research Symposium, Fresno State"
     url: "#"
   - category: Live talk
-    title: "From Wireframe to Web: A Practical Front-End Workflow"
+    title: "Instilling Civic Values in K-12 Education"
+    date: "2024-06-10"
+    location: "Fresno Teachers Association Meeting, Fresno, CA"
+  - category: Live talk
+    title: "Inclusive Teaching Strategies for Students with Developmental Disabilities"
+    date: "2024-04-18"
+    location: "Special Education Professional Development, Clovis Unified"
+  - category: Live talk
+    title: "Making History Relevant: Connecting Past to Present in the Classroom"
     date: "2024-03-05"
-    location: "Internal Workshop @ PreviousCompany Inc."
+    location: "History Teachers Workshop, Central Valley"
   - category: Live talk
-    title: "The Power of User Research in Product Development"
-    date: "2023-09-12"
-    location: "Boston University Guest Lecture, Boston, MA"
-  - category: Podcast
-    title: "Designing for Developers: A UX Perspective"
-    date: "2024-07-18"
-    location: "Syntax.fm (Guest)"
+    title: "Student-Centered Learning in Social Studies"
+    date: "2024-01-20"
+    location: "Guest Lecture, CSU Fresno Education Program"
+  - category: Conference
+    title: "Understanding Genocide: Education as Prevention"
+    date: "2023-11-12"
+    location: "Undergraduate Research Conference, Fresno State"
     url: "#"
-  - category: Podcast
-    title: "The Future of Front-End Frameworks & Design Tooling"
-    date: "2024-01-30"
-    location: "Design Details Podcast (Guest)"
-    url: "#"
-  - category: Podcast
-    title: "Building a Career in UX/UI & Development"
-    date: "2023-05-22"
-    location: "TechForward Boston Podcast"
-    url: "#"
+  - category: Live talk
+    title: "Adapting Curriculum for Diverse Learners"
+    date: "2023-09-15"
+    location: "Tutors & Educators Workshop, Fresno"
+  - category: Live talk
+    title: "Civic Education in Practice: Engaging Students with Democracy"
+    date: "2023-06-08"
+    location: "California Council for the Social Studies, Regional Meeting"

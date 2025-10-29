@@ -51,6 +51,7 @@ export default defineContentConfig({
             position: z.string(),
             company: z.object({
               name: z.string(),
+              fullName: z.string().optional(),
               url: z.string(),
               logo: z.string().editor({ input: 'icon' }),
               color: z.string()
@@ -85,6 +86,18 @@ export default defineContentConfig({
         date: z.date()
       })
     }),
+    portfolio: defineCollection({
+      type: 'data',
+      source: 'portfolio/*.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        image: z.string().nonempty().editor({ input: 'media' }),
+        url: z.string().optional(),
+        tags: z.array(z.string()),
+        date: z.date()
+      })
+    }),
     blog: defineCollection({
       type: 'page',
       source: 'blog/*.md',
@@ -99,10 +112,11 @@ export default defineContentConfig({
       type: 'page',
       source: [
         { include: 'projects.yml' },
+        { include: 'portfolio.yml' },
         { include: 'blog.yml' }
       ],
       schema: z.object({
-        links: z.array(createButtonSchema())
+        links: z.array(createButtonSchema()).optional()
       })
     }),
     speaking: defineCollection({
@@ -125,6 +139,82 @@ export default defineContentConfig({
       schema: z.object({
         content: z.object({}),
         images: z.array(createImageSchema())
+      })
+    }),
+    tutoring: defineCollection({
+      type: 'page',
+      source: 'tutoring.yml',
+      schema: z.object({
+        content: z.object({}),
+        specialties: z.array(z.object({
+          title: z.string(),
+          icon: z.string(),
+          description: z.string()
+        })).optional(),
+        testimonials: z.array(z.object({
+          quote: z.string(),
+          author: z.string()
+        })).optional()
+      })
+    }),
+    research: defineCollection({
+      type: 'page',
+      source: 'research.yml',
+      schema: z.object({
+        content: z.object({}),
+        projects: z.array(z.object({
+          title: z.string(),
+          description: z.string(),
+          status: z.string().optional(),
+          role: z.string().optional(),
+          slug: z.string()
+        }))
+      })
+    }),
+    researchProjects: defineCollection({
+      type: 'page',
+      source: {
+        include: 'research/projects/*.md',
+        prefix: '/research'
+      },
+      schema: z.object({
+        date: z.date(),
+        status: z.string(),
+        role: z.string(),
+        institution: z.string(),
+        image: z.string().editor({ input: 'media' })
+      })
+    }),
+    researchArticles: defineCollection({
+      type: 'data',
+      source: 'research/articles/*.yml',
+      schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        date: z.date(),
+        project: z.string().optional(),
+        url: z.string().optional(),
+        type: z.enum(['paper', 'article', 'presentation']).optional()
+      })
+    }),
+    education: defineCollection({
+      type: 'page',
+      source: 'education.yml',
+      schema: z.object({
+        content: z.object({}),
+        education: z.array(z.object({
+          degree: z.string(),
+          institution: z.string(),
+          status: z.string(),
+          year: z.string()
+        })).optional()
+      })
+    }),
+    contact: defineCollection({
+      type: 'page',
+      source: 'contact.yml',
+      schema: z.object({
+        content: z.object({})
       })
     })
   }

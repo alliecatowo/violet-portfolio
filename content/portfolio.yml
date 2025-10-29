@@ -1,0 +1,12 @@
+title: Teaching Portfolio
+description: Curriculum projects, lesson plans, and educational resources that showcase my approach to creating engaging, inclusive learning experiences.
+seo:
+  title: Teaching Portfolio - Violet Gash
+  description: Explore curriculum projects, lesson plans, and educational resources created by Violet Gash. Focused on civic education, history, and inclusive teaching practices.
+links:
+  - label: Tutoring Services
+    to: /tutoring
+    color: primary
+  - label: Contact Me
+    icon: i-heroicons-envelope
+    color: neutral
