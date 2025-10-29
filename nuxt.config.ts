@@ -47,13 +47,6 @@ export default defineNuxtConfig({
   },
 
   icon: {
-    serverBundle: {
-      collections: ['lucide', 'simple-icons', 'heroicons']
-    },
-    clientBundle: {
-      collections: ['lucide', 'simple-icons', 'heroicons'],
-      scan: true,
-      sizeLimitKb: 512
-    }
+    mode: 'css'
   }
 })
