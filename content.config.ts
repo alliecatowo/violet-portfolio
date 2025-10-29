@@ -171,9 +171,9 @@ export default defineContentConfig({
         })).optional()
       })
     }),
-    'research-projects': defineCollection({
+    researchProjects: defineCollection({
       type: 'page',
-      source: 'research/*.md',
+      source: 'research/projects/*.md',
       schema: z.object({
         date: z.date(),
         status: z.string(),
