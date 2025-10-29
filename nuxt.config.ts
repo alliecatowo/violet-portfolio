@@ -34,5 +34,20 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  icon: {
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 512
+    }
+  },
+
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+      ]
+    }
   }
 })
