@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
@@ -17,8 +19,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   compatibilityDate: '2024-11-01',
-
-  ssr: true,
 
   nitro: {
     prerender: {
@@ -48,9 +48,10 @@ export default defineNuxtConfig({
 
   icon: {
     serverBundle: {
-      collections: ['lucide', 'simple-icons']
+      collections: ['lucide', 'simple-icons', 'heroicons']
     },
     clientBundle: {
+      collections: ['lucide', 'simple-icons', 'heroicons'],
       scan: true,
       sizeLimitKb: 512
     }

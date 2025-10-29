@@ -31,7 +31,9 @@ useSeoMeta({
         container: 'pb-12'
       }"
     >
-      <h2 class="text-2xl font-bold mb-6 text-primary">Active Research Projects</h2>
+      <h2 class="text-2xl font-bold mb-6 text-primary">
+        Active Research Projects
+      </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <UPageCard
           v-for="(project, index) in page.projects"
@@ -50,7 +52,10 @@ useSeoMeta({
                 variant="soft"
                 size="xs"
               />
-              <span v-if="project.role" class="text-xs text-muted">
+              <span
+                v-if="project.role"
+                class="text-xs text-muted"
+              >
                 {{ project.role }}
               </span>
             </div>

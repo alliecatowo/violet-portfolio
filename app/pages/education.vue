@@ -48,8 +48,12 @@ useSeoMeta({
         >
           <div class="flex items-start justify-between">
             <div>
-              <h3 class="text-lg font-semibold">{{ edu.degree }}</h3>
-              <p class="text-sm text-primary font-medium">{{ edu.institution }}</p>
+              <h3 class="text-lg font-semibold">
+                {{ edu.degree }}
+              </h3>
+              <p class="text-sm text-primary font-medium">
+                {{ edu.institution }}
+              </p>
             </div>
             <UBadge
               :label="edu.status"
@@ -58,7 +62,9 @@ useSeoMeta({
               size="xs"
             />
           </div>
-          <p class="text-sm text-muted">{{ edu.year }}</p>
+          <p class="text-sm text-muted">
+            {{ edu.year }}
+          </p>
         </UCard>
       </div>
     </UPageSection>

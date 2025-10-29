@@ -73,7 +73,9 @@ useSeoMeta({
           :spotlight="true"
         >
           <template #footer>
-            <p class="text-sm font-semibold text-muted">— {{ testimonial.author }}</p>
+            <p class="text-sm font-semibold text-muted">
+              — {{ testimonial.author }}
+            </p>
           </template>
         </UPageCard>
       </div>

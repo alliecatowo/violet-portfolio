@@ -41,7 +41,7 @@ const state = reactive({
 const toast = useToast()
 const submitting = ref(false)
 
-async function onSubmit(event: Schema) {
+async function onSubmit(_event: Schema) {
   submitting.value = true
 
   // Simulate form submission - in production, this would send to an API
@@ -120,7 +120,9 @@ const inquiryOptions = [
         <div>
           <UCard>
             <template #header>
-              <h3 class="text-xl font-semibold">Send a Message</h3>
+              <h3 class="text-xl font-semibold">
+                Send a Message
+              </h3>
             </template>
 
             <UForm

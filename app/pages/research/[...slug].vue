@@ -55,10 +55,18 @@ useSeoMeta({
         loading="lazy"
       />
 
-      <ContentRenderer :value="page" class="prose prose-primary max-w-none" />
+      <ContentRenderer
+        :value="page"
+        class="prose prose-primary max-w-none"
+      />
 
-      <div v-if="articles && articles.length > 0" class="mt-12">
-        <h2 class="text-2xl font-bold mb-6 text-primary">Publications & Presentations</h2>
+      <div
+        v-if="articles && articles.length > 0"
+        class="mt-12"
+      >
+        <h2 class="text-2xl font-bold mb-6 text-primary">
+          Publications & Presentations
+        </h2>
         <div class="grid grid-cols-1 gap-4">
           <UPageCard
             v-for="(article, index) in articles"
@@ -92,7 +100,10 @@ useSeoMeta({
           to="/research"
           class="inline-flex items-center gap-2 text-primary hover:underline"
         >
-          <UIcon name="i-heroicons-arrow-left" class="size-4" />
+          <UIcon
+            name="i-heroicons-arrow-left"
+            class="size-4"
+          />
           Back to Research
         </NuxtLink>
       </div>

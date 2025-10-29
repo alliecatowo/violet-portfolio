@@ -52,7 +52,10 @@ defineProps<{
                   variant="outline"
                 >
                   <template #trailing>
-                    <UIcon :name="experience.company.logo" class="size-4" />
+                    <UIcon
+                      :name="experience.company.logo"
+                      class="size-4"
+                    />
                   </template>
                 </UBadge>
               </UTooltip>
@@ -67,7 +70,10 @@ defineProps<{
                 variant="outline"
               >
                 <template #trailing>
-                  <UIcon :name="experience.company.logo" class="size-4" />
+                  <UIcon
+                    :name="experience.company.logo"
+                    class="size-4"
+                  />
                 </template>
               </UBadge>
             </ULink>
