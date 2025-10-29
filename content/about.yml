@@ -1,27 +1,45 @@
 title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+description: Learn more about my journey as an educator, my teaching philosophy, research interests, and passion for making education accessible and meaningful for all students.
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  Hi, I'm **Violet Gash**, an educator and researcher passionate about creating inclusive, engaging learning experiences that inspire students to think critically about the world around them. I'm currently completing my **Bachelor's degree in Sociology** and **Multiple Subject Teaching Credential** at California State University, Fresno.
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  My journey in education is rooted in a deep belief that learning should be accessible, meaningful, and empowering for every student. With a background in political science and sociology from Clovis Community College, I bring both academic rigor and real-world perspective to my teaching.
 
-  ### My Design Philosophy
+  ### My Teaching Philosophy
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  I believe that **education is about more than memorization** – it's about helping students develop critical thinking skills, understand their place in the world, and become engaged, informed citizens. My approach centers on:
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  - **Making connections** between classroom learning and real-world contexts
+  - **Inclusive teaching** that adapts to each student's unique learning style and needs
+  - **Instilling civic values** and helping students understand their role in society
+  - **Building confidence** through supportive, encouraging guidance
+
+  I specialize in working with K-12 students across all subjects, with particular expertise in history, social studies, and civic education. I also have dedicated experience supporting students with developmental disabilities, creating adaptive learning environments where all students can thrive.
+
+  ### Research & Academic Interests
+
+  Beyond tutoring, I'm actively involved in academic research that reflects my commitment to social justice and understanding complex societal issues:
+
+  - **Genocide Prevention Research**: Examining historical patterns and contemporary prevention strategies, with a focus on understanding how societies can recognize and prevent mass atrocities
+  - **Midwives & Doulas Mapping Project**: Contributing to research on healthcare access, maternal health support systems, and the geographic distribution of birthing care professionals
+
+  These research experiences inform my teaching, helping me bring depth, nuance, and critical perspectives to discussions of history, society, and current events.
 
   ### What Drives Me
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  What excites me most about education is witnessing the moment when a concept clicks for a student, or when they start to see the connections between what they're learning and the world they live in. I'm particularly passionate about:
 
-  ### Beyond the Screen
+  - **History Education**: Bringing historical events to life and helping students understand how the past shapes our present
+  - **Civic Engagement**: Empowering young people to understand government, politics, and their rights and responsibilities as citizens
+  - **Inclusive Learning**: Ensuring that students with diverse learning needs have access to quality education that respects their strengths and supports their growth
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  ### Beyond Teaching
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
+  When I'm not tutoring or conducting research, I enjoy exploring new educational methodologies, staying current on social science research, and thinking about how we can create more equitable education systems. I'm based in the Central Valley of California and am committed to serving my local community through education.
+
+  Thanks for stopping by! Feel free to explore my [teaching portfolio](/portfolio), read my [blog](/blog) on educational insights, or [contact me](/tutoring) if you're interested in tutoring services or would like to connect about education and research.
 images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  - src: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1422&auto=format&fit=crop&ixlib=rb-4.0.3
+    alt: Teaching and learning environment
+  - src: https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3
+    alt: Research and study materials
