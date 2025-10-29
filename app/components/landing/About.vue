@@ -16,7 +16,7 @@ defineProps<{
     }"
   >
     <template #title>
-      <span class="bg-gradient-to-r from-violet-600 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%]">
+      <span class="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
         {{ page.about.title }}
       </span>
     </template>
