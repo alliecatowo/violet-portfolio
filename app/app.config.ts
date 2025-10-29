@@ -3,6 +3,10 @@ export default defineAppConfig({
     mode: 'css'
   },
   ui: {
+    icons: {
+      dark: 'i-lucide-moon',
+      light: 'i-lucide-sun'
+    },
     colors: {
       primary: 'violet',
       neutral: 'neutral'
