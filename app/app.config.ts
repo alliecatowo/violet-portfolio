@@ -1,7 +1,4 @@
 export default defineAppConfig({
-  icon: {
-    mode: 'css'
-  },
   ui: {
     icons: {
       dark: 'i-lucide-moon',
