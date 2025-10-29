@@ -84,14 +84,28 @@ useSeoMeta({
             </span>
           </template>
           <template #footer>
-            <div class="flex flex-wrap gap-2">
-              <UBadge
-                v-for="tag in item.tags"
-                :key="tag"
-                :label="tag"
-                variant="soft"
-                size="xs"
-              />
+            <div class="flex items-center justify-between">
+              <div class="flex flex-wrap gap-2">
+                <UBadge
+                  v-for="tag in item.tags"
+                  :key="tag"
+                  :label="tag"
+                  variant="soft"
+                  size="xs"
+                />
+              </div>
+              <ULink
+                v-if="item.url"
+                :to="item.url"
+                target="_blank"
+                class="text-sm text-primary flex items-center gap-1 shrink-0"
+              >
+                View Details
+                <UIcon
+                  name="i-lucide-external-link"
+                  class="size-4"
+                />
+              </ULink>
             </div>
           </template>
           <img

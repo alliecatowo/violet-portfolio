@@ -8,14 +8,18 @@ defineProps<{
 
 <template>
   <UPageSection
-    :title="page.experience.title"
     class="border-l-4 border-primary pl-6"
     :ui="{
       container: '!p-0',
-      title: 'text-left text-2xl sm:text-3xl font-semibold text-primary mb-6',
+      title: 'text-left text-2xl sm:text-3xl font-semibold mb-6',
       description: 'mt-2'
     }"
   >
+    <template #title>
+      <span class="bg-gradient-to-r from-violet-600 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%]">
+        {{ page.experience.title }}
+      </span>
+    </template>
     <template #description>
       <div class="flex flex-col gap-6">
         <Motion
