@@ -1,1 +1,0 @@
-import{c as a,h as _,e,w as c,C as r,c6 as l,c7 as p,aS as d}from"#entry";import{_ as m}from"./DlAUqK2U.js";const f={};function i(n,u){const o=l,t=p,s=d;return _(),a("div",null,[e(s,{class:"sm:border-x border-default pt-10"},{default:c(()=>[e(o,{links:n.navLinks},null,8,["links"]),r(n.$slots,"default"),e(t)]),_:3})])}const h=m(f,[["render",i]]);export{h as default};
