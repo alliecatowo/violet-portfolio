@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const { data: page } = await useAsyncData(`research-${route.params.slug}`, () => {
-  return queryContent(`research/projects/${route.params.slug}`).findOne()
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection('researchProjects').path(route.path).first()
 })
 
 if (!page.value) {

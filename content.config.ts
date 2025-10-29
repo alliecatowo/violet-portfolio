@@ -171,6 +171,20 @@ export default defineContentConfig({
         }))
       })
     }),
+    researchProjects: defineCollection({
+      type: 'page',
+      source: {
+        include: 'research/projects/*.md',
+        prefix: '/research'
+      },
+      schema: z.object({
+        date: z.date(),
+        status: z.string(),
+        role: z.string(),
+        institution: z.string(),
+        image: z.string().editor({ input: 'media' })
+      })
+    }),
     education: defineCollection({
       type: 'page',
       source: 'education.yml',

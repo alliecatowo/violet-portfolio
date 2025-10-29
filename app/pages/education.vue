@@ -24,15 +24,20 @@ useSeoMeta({
       :title="page.title"
       :description="page.description"
       class="bg-gradient-to-b from-primary/5 to-transparent"
+      :ui="{
+        title: 'text-left',
+        description: 'text-left'
+      }"
     />
     <UPageSection
       v-if="page.education"
       title="Academic Credentials"
       :ui="{
-        container: 'pb-12'
+        container: 'pb-12',
+        title: 'text-left'
       }"
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 gap-6">
         <UCard
           v-for="(edu, index) in page.education"
           :key="index"
