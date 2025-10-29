@@ -1,0 +1,1 @@
+import{y as c,Q as l,af as s,c as r,d as p,C as u,n as d}from"#entry";const f={base:""},y={__name:"ProseTbody",props:{class:{type:null,required:!1}},setup(e){const a=e,o=c(),t=l(()=>s({extend:s(f),...o.ui?.prose?.tbody||{}}));return(n,i)=>(p(),r("tbody",{class:d(t.value({class:a.class}))},[u(n.$slots,"default")],2))}};export{y as default};
