@@ -46,12 +46,14 @@ useSeoMeta({
     </UPageHeader>
 
     <UPageBody>
-      <img
+      <NuxtImg
         v-if="page.image"
         :src="page.image"
         :alt="page.title"
         class="w-full h-64 object-cover rounded-lg mb-8"
-      >
+        sizes="100vw md:1200px"
+        loading="lazy"
+      />
 
       <ContentRenderer :value="page" class="prose prose-primary max-w-none" />
 
