@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const { data: navigation } = await useAsyncData('navMenu', () =>
-  queryCollection('navigation').first()
+const { data: navLinks } = await useAsyncData('navLinks', () =>
+  queryCollection('navigation').first().then(nav => nav?.links || [])
 )
 
-const links = computed(() => navigation.value?.links || [])
+const links = computed(() => navLinks.value || [])
 </script>
 
 <template>
