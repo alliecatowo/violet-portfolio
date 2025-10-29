@@ -167,19 +167,8 @@ export default defineContentConfig({
           description: z.string(),
           status: z.string().optional(),
           role: z.string().optional(),
-          slug: z.string().optional()
-        })).optional()
-      })
-    }),
-    researchProjects: defineCollection({
-      type: 'page',
-      source: 'research/projects/*.md',
-      schema: z.object({
-        date: z.date(),
-        status: z.string(),
-        role: z.string(),
-        institution: z.string(),
-        image: z.string().editor({ input: 'media' })
+          slug: z.string()
+        }))
       })
     }),
     education: defineCollection({

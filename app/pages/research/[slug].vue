@@ -2,7 +2,7 @@
 const route = useRoute()
 
 const { data: page } = await useAsyncData(`research-${route.params.slug}`, () => {
-  return queryCollection('researchProjects').path(`/research/projects/${route.params.slug}`).first()
+  return queryContent(`research/projects/${route.params.slug}`).findOne()
 })
 
 if (!page.value) {

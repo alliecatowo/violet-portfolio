@@ -9,15 +9,15 @@ defineProps<{
 <template>
   <UPageSection
     :title="page.experience.title"
-    class="border-l-4 border-primary pl-4"
+    class="border-l-4 border-primary pl-6"
     :ui="{
-      container: '!p-0 gap-4 sm:gap-4',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium text-primary',
+      container: '!p-0',
+      title: 'text-left text-2xl sm:text-3xl font-semibold text-primary mb-6',
       description: 'mt-2'
     }"
   >
     <template #description>
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-6">
         <Motion
           v-for="(experience, index) in page.experience.items"
           :key="index"
@@ -25,41 +25,51 @@ defineProps<{
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.4 + 0.2 * index }"
           :in-view-options="{ once: true }"
-          class="text-muted"
         >
-          <div class="flex flex-col sm:flex-row sm:items-center gap-2">
-            <p class="text-sm shrink-0">
-              {{ experience.date }}
-            </p>
-            <USeparator class="hidden sm:block" orientation="vertical" />
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap items-center gap-2 text-sm text-muted">
+              <span class="font-medium">{{ experience.date }}</span>
+            </div>
             <ULink
-              class="flex flex-wrap items-center gap-1"
+              class="flex flex-wrap items-center gap-2"
               :to="experience.company.url"
               target="_blank"
             >
-              <span class="text-sm">
+              <span class="text-base sm:text-lg font-medium">
                 {{ experience.position }}
               </span>
               <UTooltip
                 v-if="experience.company.fullName"
                 :text="experience.company.fullName"
               >
-                <div
-                  class="inline-flex items-center gap-1 flex-wrap"
-                  :style="{ color: experience.company.color }"
+                <UBadge
+                  :label="experience.company.name"
+                  :ui="{
+                    base: 'inline-flex items-center gap-1.5 px-3 py-1.5',
+                    label: 'font-semibold text-sm'
+                  }"
+                  :style="{ backgroundColor: `${experience.company.color}15`, color: experience.company.color, borderColor: experience.company.color }"
+                  variant="outline"
                 >
-                  <span class="font-medium">{{ experience.company.name }}</span>
-                  <UIcon :name="experience.company.logo" class="shrink-0" />
-                </div>
+                  <template #trailing>
+                    <UIcon :name="experience.company.logo" class="size-4" />
+                  </template>
+                </UBadge>
               </UTooltip>
-              <div
+              <UBadge
                 v-else
-                class="inline-flex items-center gap-1 flex-wrap"
-                :style="{ color: experience.company.color }"
+                :label="experience.company.name"
+                :ui="{
+                  base: 'inline-flex items-center gap-1.5 px-3 py-1.5',
+                  label: 'font-semibold text-sm'
+                }"
+                :style="{ backgroundColor: `${experience.company.color}15`, color: experience.company.color, borderColor: experience.company.color }"
+                variant="outline"
               >
-                <span class="font-medium">{{ experience.company.name }}</span>
-                <UIcon :name="experience.company.logo" class="shrink-0" />
-              </div>
+                <template #trailing>
+                  <UIcon :name="experience.company.logo" class="size-4" />
+                </template>
+              </UBadge>
             </ULink>
           </div>
         </Motion>
