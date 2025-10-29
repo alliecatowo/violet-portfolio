@@ -19,7 +19,11 @@ defineProps<{
       }"
     >
       <template #list-trailing>
-        <UColorModeButton size="sm" class="rounded-full" />
+        <UColorModeButton
+          :icon="$colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
+          size="sm"
+          class="rounded-full"
+        />
       </template>
     </UNavigationMenu>
   </div>
