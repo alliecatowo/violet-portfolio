@@ -28,7 +28,7 @@ experience:
         fullName: California State University, Fresno
         logo: i-heroicons-academic-cap
         url: https://www.fresnostate.edu
-        color: '#C41230'
+        color: '#9333ea'
     - position: Multiple Subject Teaching Credential
       date: In Progress
       company:
@@ -36,7 +36,7 @@ experience:
         fullName: California State University, Fresno
         logo: i-heroicons-document-check
         url: https://www.fresnostate.edu
-        color: '#C41230'
+        color: '#9333ea'
     - position: Dual Associate in Political Science & Sociology
       date: Completed
       company:
@@ -44,7 +44,7 @@ experience:
         fullName: Clovis Community College
         logo: i-heroicons-building-library
         url: https://www.cloviscollege.edu
-        color: '#003DA5'
+        color: '#a855f7'
 testimonials:
   - quote: Violet's patience and teaching style made all the difference for my daughter. She went from struggling with history to actually enjoying it! Violet has a gift for making complex topics accessible and engaging. We saw significant improvement in both grades and confidence.
     author:
