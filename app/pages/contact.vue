@@ -83,16 +83,16 @@ const inquiryOptions = [
     />
 
     <UPageBody>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="max-w-4xl mx-auto">
         <!-- Contact Info & Content -->
-        <div>
+        <div class="mb-12">
           <MDC
             :value="page.content"
             unwrap="p"
-            class="prose prose-primary max-w-none"
+            class="prose prose-primary max-w-none mb-8"
           />
 
-          <div class="mt-8 space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <UPageCard
               icon="i-heroicons-envelope"
               title="Email"
